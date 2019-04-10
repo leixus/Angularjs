@@ -1,0 +1,71 @@
+@import 'template/head.less';
+@import 'template/foot.less';
+@import 'template/content.less';
+@import 'property.less';
+
+.fs(@px) {
+    font-size: unit(@px / 16, rem);
+}
+
+.w(@px) {
+    width: unit(@px / 16, rem);
+}
+
+.h(@px) {
+    height: unit(@px / 16, rem);
+}
+
+.lh(@px) {
+    line-height: unit(@px / 16, rem);
+}
+
+.mt(@px) {
+    margin-top: unit(@px / 16, rem);
+}
+
+.ml(@px) {
+    margin-top: unit(@px / 16, rem);
+}
+
+.mr(@px) {
+    margin-top: unit(@px / 16, rem);
+}
+
+.mb(@px) {
+    margin-top: unit(@px / 16, rem);
+}
+.pt(@px) {
+    padding-top: unit(@px / 16, rem);
+}
+
+.pl(@px) {
+    padding-left: unit(@px / 16, rem);
+}
+
+.pr(@px) {
+    padding-right: unit(@px / 16, rem);
+}
+
+.pb(@px) {
+    padding-bottom: unit(@px / 16, rem);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: @bodyBgColor;
+    .fs(16);
+}
+
+button {
+    border-width: 0;
+    outline-width: 0;
+}

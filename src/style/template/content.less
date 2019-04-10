@@ -1,0 +1,21 @@
+@import '../variable.less';
+
+.boxModel{
+    padding: 10px 6px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    img{
+        .w(80);
+        .h(80);
+    }
+    .desc{
+        padding-left: 10px;
+        :nth-child(1){
+            .mb(12);
+            .fs(24);
+        }
+        :nth-child(2), :nth-child(3){
+            .fs(14);
+        }
+    }
+}
