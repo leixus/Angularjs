@@ -1,10 +1,10 @@
 <div>
-    <div class="boxModel" ng-repeat="item in data">
-        <img src="../../image/company-3.png" ng-src="{{item.imgSrc}}" alt="前度">
+    <div ui-sref="position({id: item.id})" class="boxModel" ng-repeat="item in data">
+        <img ng-src="{{item.imageUrl}}" alt="item.companyName">
         <div class="desc">
-            <p ng-bind="item.name"></p>
-            <p ng-bind="item.companyName + '|' + item.city + item.industry"></p>
-            <p ng-bind="item.time"></p>
+            <p ng-bind="item.job"></p>
+            <p ng-bind="item.companyName + '|' + item.cityName + item.industryName"></p>
+            <p ng-bind="item.date"></p>
         </div>
     </div>
 </div>

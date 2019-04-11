@@ -1,6 +1,12 @@
+@import 'main.less';
 @import 'template/head.less';
 @import 'template/foot.less';
 @import 'template/content.less';
+@import 'template/case.less';
+@import 'position.less';
+@import 'template/positionClass.less';
+@import 'template/positionInfo.less';
+@import 'template/company.less';
 @import 'property.less';
 
 .fs(@px) {
@@ -24,15 +30,15 @@
 }
 
 .ml(@px) {
-    margin-top: unit(@px / 16, rem);
+    margin-left: unit(@px / 16, rem);
 }
 
 .mr(@px) {
-    margin-top: unit(@px / 16, rem);
+    margin-right: unit(@px / 16, rem);
 }
 
 .mb(@px) {
-    margin-top: unit(@px / 16, rem);
+    margin-bottom: unit(@px / 16, rem);
 }
 .pt(@px) {
     padding-top: unit(@px / 16, rem);

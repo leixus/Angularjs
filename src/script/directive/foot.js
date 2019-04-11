@@ -6,4 +6,4 @@ angular.module('app').directive('appFoot', function () {
         replace: true,
         templateUrl: '../../view/template/foot.html'
     }
-})
+});
