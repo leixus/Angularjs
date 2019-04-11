@@ -7,7 +7,7 @@ angular.module('app').directive('appCompany',
             replace: true,
             templateUrl: '../../view/template/company.html',
             scope: {
-
+                'company': '='
             }
         };
     }
