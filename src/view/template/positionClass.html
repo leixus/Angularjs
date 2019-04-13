@@ -3,7 +3,8 @@
     <button ng-click="showPositionList($index)" class="{{$index === isActive?'active':''}}"
             ng-repeat="cls in company.positionClass" ng-bind="cls.name"></button>
     <ul>
-        <li class="p-r" ng-repeat="pos in company.positionClass[isActive].positionList">
+        <!--<li class="p-r" ng-repeat="pos in company.positionClass[isActive].positionList">-->
+        <li class="p-r" ng-repeat="pos in positionList">
             <p ng-bind="pos.name"></p>
             <p ng-bind="pos.createdDate"></p>
             <span ng-bind="pos.salary" class="p-a"></span>
