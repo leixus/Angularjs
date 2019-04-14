@@ -9,4 +9,4 @@ angular.module('app').directive('appContent', function () {
             data: "="
         }
     }
-})
+});
