@@ -27,6 +27,25 @@ angular.module('app').config(['$stateProvider', '$urlRouterProvider',
                 url: '/me',
                 templateUrl: 'view/me.html',
                 controller: 'meCtrl'
+            })
+            .state('login', {
+                url: '/login',
+                templateUrl: 'view/login.html',
+                controller: 'loginCtrl'
+            })
+            .state('register', {
+                url: '/register',
+                templateUrl: 'view/register.html',
+                controller: 'registerCtrl'
+            })
+            .state('post', {
+                url: '/post',
+                templateUrl: 'view/post.html',
+                controller: 'postCtrl'
+            }).state('favorite', {
+                url: '/favorite',
+                templateUrl: 'view/favorite.html',
+                controller: 'favoriteCtrl'
             });
         $urlRouterProvider.otherwise('main');
     }]);
