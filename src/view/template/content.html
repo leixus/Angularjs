@@ -1,9 +1,12 @@
 <div>
-    <div ui-sref="position({id: item.id})" class="boxModel" ng-repeat="item in data">
+    <div ui-sref="position({id: item.id})"
+         class="boxModel"
+         ng-repeat="item in data | filterByObj: filterObj">
         <img ng-src="{{item.imageUrl}}" alt="item.companyName">
         <div class="desc">
             <p ng-bind="item.job"></p>
-            <p ng-bind="item.companyName + '|' + item.cityName + item.industryName"></p>
+            <p ng-bind="item.companyName + '|' + ' ' + item.cityName + ' ' +  item.industryName + ' ' +  item.scaleName"></p>
+            <p ng-bind="item.salaryName"></p>
             <p ng-bind="item.date"></p>
         </div>
     </div>

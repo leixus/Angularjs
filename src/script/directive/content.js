@@ -6,7 +6,8 @@ angular.module('app').directive('appContent', function () {
         replace: true,
         templateUrl: '../../view/template/content.html',
         scope: {
-            data: "="
+            data: "=",
+            filterObj: "="
         }
     }
 });
